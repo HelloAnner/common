@@ -10,7 +10,13 @@ plugins {
 }
 
 
-allprojects{
+dependencies {
+    api project(':common-string')
+    api project(':common-log')
+}
+
+
+allprojects {
     apply plugin: 'java-library'
     repositories {
         mavenLocal()
@@ -21,12 +27,10 @@ allprojects{
     dependencies {
         testImplementation 'junit:junit:4.13.2'
         testImplementation 'org.easymock:easymock:4.3'
-}
+    }
 
     group = 'com.anner'
     version = '1.0'
     description = 'common'
     java.sourceCompatibility = JavaVersion.VERSION_1_8
 }
-
-
