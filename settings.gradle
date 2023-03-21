@@ -11,3 +11,5 @@ rootProject.name = 'common'
 
 include 'common-log'
 include 'common-string'
+include 'common-json'
+include 'common-reflect'

@@ -13,6 +13,8 @@ plugins {
 dependencies {
     api project(':common-string')
     api project(':common-log')
+    api project(':common-json')
+    api project(':common-reflect')
 }
 
 
@@ -25,6 +27,8 @@ allprojects {
     }
 
     dependencies {
+        implementation 'org.jetbrains:annotations:20.1.0'
+        
         testImplementation 'junit:junit:4.13.2'
         testImplementation 'org.easymock:easymock:4.3'
     }
